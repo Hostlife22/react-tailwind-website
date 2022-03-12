@@ -96,8 +96,6 @@ const ExploreSectionWrapper = tw.div`
     justify-center
     items-center
     mt-3
-    xl:mt-6
-    2xl:mt-10
     max-w-sm
     xl:max-w-2xl
     2xl:max-w-4xl
