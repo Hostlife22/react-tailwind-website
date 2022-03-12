@@ -1,12 +1,12 @@
 import React from "react";
 import { SiFacebook, SiInstagram, SiTwitter } from "react-icons/si";
-import { Link } from "react-scroll";
+import { Element, Link } from "react-scroll";
 import tw from "twin.macro";
 import { Logo } from "../logo/Logo";
 
 export function Footer() {
   return (
-    <FooterContainer>
+    <FooterContainer name="TravelPlaces">
       <Wrapper>
         <TopSection>
           <Logo />
@@ -15,13 +15,23 @@ export function Footer() {
           <LeftInnerContainer>
             <Menu>
               <MenuItem>
-                <Link to="Home">Home</Link>
+                <Link to="Home" smooth={"easeInOutQuad"} duration={1500}>
+                  Home
+                </Link>
               </MenuItem>
               <MenuItem>
-                <Link to="Explore">Explore</Link>
+                <Link to="Explore" smooth={"easeInOutQuad"} duration={1500}>
+                  Explore
+                </Link>
               </MenuItem>
               <MenuItem>
-                <Link to="TravelPlaces">Travel Places</Link>
+                <Link
+                  to="TravelPlaces"
+                  smooth={"easeInOutQuad"}
+                  duration={1500}
+                >
+                  Travel Places
+                </Link>
               </MenuItem>
             </Menu>
             <Menu>
@@ -83,7 +93,7 @@ export function Footer() {
   );
 }
 
-const FooterContainer = tw.div`
+const FooterContainer = tw(Element)`
 	w-full
 	h-96
 	bg-dark-blue-500
@@ -157,6 +167,7 @@ const MenuItem = tw.li`
 	text-sm
 	lg:text-base
 	mt-2
+	cursor-pointer
 `;
 
 const TopSection = tw.div`

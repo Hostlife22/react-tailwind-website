@@ -1,6 +1,6 @@
 import React from "react";
 import { BsArrowDownCircle } from "react-icons/bs";
-import { Link } from "react-scroll";
+import { Element, Link } from "react-scroll";
 import styled from "styled-components";
 import tw from "twin.macro";
 import { NavBar } from "../../components/logo/NavBar";
@@ -8,7 +8,7 @@ import BackgroundImage from "../../images/indonesia-high-res.jpg";
 
 export const TopSection: React.FC = () => {
   return (
-    <TopSectionContainer>
+    <TopSectionContainer name="Home">
       <LandingSection>
         <NavBar />
         <InfoSection>
@@ -36,7 +36,7 @@ export const TopSection: React.FC = () => {
   );
 };
 
-const TopSectionContainer = styled.div`
+const TopSectionContainer = styled(Element)`
   ${tw`
 	w-full
 	flex

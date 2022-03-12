@@ -14,13 +14,19 @@ export function NavBar() {
   const navItems = (
     <NavItems>
       <NavItem>
-        <Link to="Home">Home</Link>
+        <Link to="Home" smooth={"easeInOutQuad"} duration={1500}>
+          Home
+        </Link>
       </NavItem>
       <NavItem>
-        <Link to="Explore">Explore</Link>
+        <Link to="Explore" smooth={"easeInOutQuad"} duration={1500}>
+          Explore
+        </Link>
       </NavItem>
       <NavItem>
-        <Link to="TravelPlaces">Travel Places</Link>
+        <Link to="TravelPlaces" smooth={"easeInOutQuad"} duration={1500}>
+          Travel Places
+        </Link>
       </NavItem>
     </NavItems>
   );
