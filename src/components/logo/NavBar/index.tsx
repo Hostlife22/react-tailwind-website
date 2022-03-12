@@ -39,7 +39,7 @@ export function NavBar() {
 }
 
 const Container = styled.div`
-  color: red;
+  width: 90%;
   ${tw`
 	flex
 	h-20
@@ -57,6 +57,7 @@ const NavItems = tw.ul`
 list-none
 w-full
 h-auto
+lg:w-auto
 lg:h-full
 flex
 lg:ml-20
@@ -77,7 +78,7 @@ text-lg
 lg:text-base
 transition-colors
 transition-duration[300ms]
-hover:text-gray-300
+hover:text-gray-200
 box-content
 mb-2
 lg:mb-0
