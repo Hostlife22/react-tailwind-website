@@ -6,7 +6,7 @@ import styled from "styled-components";
 import tw from "twin.macro";
 import { deviceSize } from "../../responsive";
 import { Logo } from "../Logo";
-import styles from "./menuStyles";
+import { styles } from "./menuStyles";
 
 export function NavBar() {
   const isMobile = useMediaQuery({ maxWidth: deviceSize.mobile });
