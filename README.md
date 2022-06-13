@@ -2,6 +2,10 @@
 
 ### [Site link](https://peaceful-rosalind-8f71ec.netlify.app/)
 
+<kbd>
+  <img align="right" alt="img" src="Sxrc06F.jpeg"  />
+</kbd>
+
  ### 🛠 The tech stack is:
 
 
